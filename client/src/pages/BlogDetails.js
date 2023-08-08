@@ -11,7 +11,7 @@ const BlogDetails = () => {
   // get blog details
   const getBlogDetail = async () => {
     try {
-      const { data } = await axios.get(`http://localhost:8080/api/v1/blog/get-blog/${id}`);
+      const { data } = await axios.get(`https://blog-mern-backend-s00i.onrender.com/api/v1/blog/get-blog/${id}`);
       if (data?.success) {
         setBlog(data?.blog);
         setInputs({
